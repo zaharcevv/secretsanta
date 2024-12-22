@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #a00000;
+    background-image: url('https://www.transparenttextures.com/patterns/spiral.png');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100vh;
+    padding: 0;
+    position: relative; /* Ensure positioning context for mistletoe */
+}
+
+/* Mistletoe Icons */
+.mistletoe {
+    position: absolute;
+    z-index: 2;
+    width: 300px; /* Increased size */
+    height: 300px; /* Increased size */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.mistletoe.left {
+    top: 5%;
+    left: 5%;
+    transform: rotate(-25deg); /* Rotate to the left */
+}
+
+.mistletoe.right {
+    top: 5%;
+    right: 5%;
+    transform: rotate(25deg); /* Rotate to the right */
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Vertically stack icons */
+    align-items: center;
+    gap: 20px; /* Space between icons */
+    margin-top: 20px;
+}
+
+/* Hover Effect for Presents */
+lord-icon {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+lord-icon:hover {
+    transform: scale(1.2); /* Increase size when hovered */
+}
+
+/* Section */
+section {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 90%; /* Ensures good fit on smaller screens */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 2px solid #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .icon-container {
+        gap: 15px; /* Adjust spacing for small screens */
+    }
+
+    lord-icon {
+        width: 200px; /* Adjust icon size for small screens */
+        height: 200px;
+    }
+
+    section {
+        padding: 10px; /* Slightly reduce padding for better fit */
+    }
+
+    /* Adjust mistletoe for smaller screens */
+    .mistletoe {
+        width: 200px; /* Smaller size for mobile */
+        height: 200px;
+        transform: rotate(0deg); /* Reset rotation for mobile */
+    }
+}
