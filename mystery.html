@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Page</title>
+  <link rel="stylesheet" href="mystery-styles.css">
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <lord-icon
+        src="https://cdn.lordicon.com/pzsydocr.json"
+        trigger="hover"
+        class="mistletoe left"
+        style="width:300px;height:300px">
+      </lord-icon>
+      <div class="header-text">
+        <h1>Овој поклон че треба сама да откријш шо е</h1>
+        <p>хммммммм</p>
+      </div>
+      <lord-icon
+        src="https://cdn.lordicon.com/pzsydocr.json"
+        trigger="hover"
+        class="mistletoe right"
+        style="width:300px;height:300px">
+      </lord-icon>
+    </div>
+  </header>
+
+  <main>
+    <section class="quote-item">
+        <p class="quote-text">"Hint 1: Овој поклон не постое сега"</p>
+      </section>
+
+      <section class="quote-item">
+        <p class="quote-text">"Hint 2: Овој поклон го нема у Македонија, најверојатно го нема у Америка, а дефинитивно го има у Англија"</p>
+      </section>
+
+      <section class="quote-item">
+        <p class="quote-text">"Hint 3: Не можиш да отвориш лингва линк.. или можиш?"</p>
+      </section>
+
+      <section class="quote-item">
+        <p class="quote-text">"Hint 4: За овој поклон се смееме нооооогу оваа година, буквално најголемиот inside joke"</p>
+      </section>
+
+      <button id="revealBtn">Одговор</button>
+
+      <!-- Hidden content -->
+      <div id="hiddenContent" style="display:none;">
+        <img src="medieval.jpg" alt="Image" class="revealed-image">
+        <p class="revealed-text">Нормално дека е средновековно царство.......</p>
+        <section class="quote-item">
+          <p class="quote-text">Фала шо ни а направи ваа година поинтересна! тесакаме &lt;333</p>
+        </section>
+      </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
